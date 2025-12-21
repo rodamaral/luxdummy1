@@ -1,0 +1,26 @@
+package = "luxdummy1"
+version = "0.1.0"
+lua = ">=5.1"
+
+[description]
+summary = ""
+maintainer = "rodamaral"
+labels = [  ]
+
+[source]
+url = "https://github.com/rodamaral/$(PACKAGE)/archive/refs/tags/v$(VERSION).zip"
+dev = "git+https://github.com/rodamaral/$(PACKAGE).git"
+
+[dependencies]
+argparse = "0.7.1-1"
+# Add your dependencies here
+# `busted = ">=2.0"`
+
+[run]
+args = [ "src/main.lua" ]
+
+[build]
+type = "builtin"
+
+[build.modules]
+"luxdummy1" = "src/main.lua"
