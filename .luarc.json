@@ -1,7 +1,5 @@
 {
   "workspace": {
-    "library": [
-      ".lux/5.4/d528cd52981564259b873ae3f972f48a19522d775240465725a6434109336b92-argparse@0.7.1-1/src"
-    ]
+    "library": []
   }
 }
