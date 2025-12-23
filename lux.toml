@@ -1,5 +1,5 @@
 package = "luxdummy1"
-version = "0.1.1"
+version = "0.1.2"
 lua = ">=5.1"
 
 [description]
@@ -26,3 +26,8 @@ type = "builtin"
 
 [build.modules]
 "luxdummy1" = "src/main.lua"
+"luxdummy1lua" = "lua/main.lua"
+
+[build.install.lua]
+"luxdummy1" = "src/main.lua"
+"luxdummy1lua" = "lua/main.lua"
