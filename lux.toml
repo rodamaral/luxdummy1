@@ -1,5 +1,5 @@
 package = "luxdummy1"
-version = "0.1.4"
+version = "0.1.5"
 lua = ">=5.1"
 
 [description]
@@ -7,13 +7,12 @@ summary = ""
 maintainer = "rodamaral"
 labels = [  ]
 
-# [source]
-# url = "https://github.com/rodamaral/$(PACKAGE)/archive/refs/tags/v$(VERSION).zip"
-# dev = "git+https://github.com/rodamaral/$(PACKAGE).git"
-
 [source]
-url = "https://github.com/rodamaral/$(PACKAGE)"
-tag = "v0.1.4"
+url = "https://github.com/rodamaral/$(PACKAGE)/archive/refs/tags/v$(VERSION).zip"
+dev = "git+https://github.com/rodamaral/$(PACKAGE).git"
+dir = "luxdummy1-0.1.5-1"
+# dir = "$(PACKAGE)-$(VERSION)-1"
+# dir = "$(PACKAGE)-$(VERSION)"
 
 [dependencies]
 argparse = "0.7.1-1"
@@ -26,12 +25,8 @@ lua-cjson = "2.1.0-1"
 args = [ "src/main.lua" ]
 
 [build]
-type = "none"
+type = "builtin"
 
 [build.modules]
 "luxdummy1" = "src/main.lua"
-"luxdummy1lua" = "lua/main.lua"
-
-[build.install.lua]
-"luxdummy1" = "src/main.lua"
-"luxdummy1lua" = "lua/main.lua"
+"luxdummy1_lua" = "lua/main.lua"
