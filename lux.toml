@@ -1,5 +1,5 @@
 package = "luxdummy1"
-version = "0.1.5"
+version = "0.1.6"
 lua = ">=5.1"
 
 [description]
@@ -10,7 +10,7 @@ labels = [  ]
 [source]
 url = "https://github.com/rodamaral/$(PACKAGE)/archive/refs/tags/v$(VERSION).zip"
 dev = "git+https://github.com/rodamaral/$(PACKAGE).git"
-dir = "luxdummy1-0.1.5-1"
+dir = "luxdummy1-0.1.6-1"
 # dir = "$(PACKAGE)-$(VERSION)-1"
 # dir = "$(PACKAGE)-$(VERSION)"
 
