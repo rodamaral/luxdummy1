@@ -1,5 +1,5 @@
 package = "luxdummy1"
-version = "0.1.8"
+version = "0.1.10"
 lua = ">=5.1"
 
 [description]
